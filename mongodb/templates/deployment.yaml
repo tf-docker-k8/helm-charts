@@ -18,5 +18,3 @@ spec:
       containers:
       - name: mongodb
         image: "techworldwithsiva/mongodb:{{ .Values.deployment.imageVersion}}"
-      nodeSelector:
-        tier: DB

@@ -1,6 +1,6 @@
 # This is the metadata for Helm charts
 apiVersion: v1
 name: mongodb
-version: 1.0.1 #this is the chart version
+version: 1.0.2 #this is the chart version
 description: This is the MongoDB Helm Chart
 appVersion: v1.0.0 #this version belongs to application not kubernetes manifest files
