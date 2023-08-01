@@ -1,0 +1,5 @@
+deployment:
+  imageVersion: k8
+  replicaCount: 1
+service:
+  servicePort: 27017

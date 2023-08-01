@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb
+  labels:
+    app: mongodb
+    tier: DB
+    project: roboshop
+spec:
+  replicas: {{ .Values.deployment.replicaCount}}
+  selector:
+    matchLabels:
+      app: mongodb
+      tier: DB
+      project: roboshop
+  template:
+    metadata:
+      labels:
+        app: mongodb
+        tier: DB
+        project: roboshop
+    spec:
+      containers:
+      - name: mongodb
+        image: "techworldwithsiva/mongodb:{{ .Values.deployment.imageVersion}}"
+      nodeSelector:
+        tier: DB
