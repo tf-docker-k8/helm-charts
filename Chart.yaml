@@ -1,6 +1,6 @@
 # This is the metadata for Helm charts
 apiVersion: v1
 name: nginx
-version: 1.0.0 #this is the chart version
+version: 1.0.1 #this is the chart version
 description: This is the NgInx Helm Chart
-appVersion: v1.0.0 #this version belongs to application
+appVersion: v1.0.5 #this version belongs to application
