@@ -1,0 +1,5 @@
+deployment:
+  imageVersion: alpine
+  replicaCount: 5
+service:
+  port: 80
